@@ -34,10 +34,10 @@ def si():
     print("Information: https://tddcd.info")
 
 def menu():
-    sys.stdout.write(f"NaSaKi Ddos Update 1.5.8")
+    sys.stdout.write(f"NaSaKi Ddos Update 4.5.8")
     clear()
-    print('HaToKi DDoS By TranDucDuy [hotieubao.info] ')
-    print("https:// tddcd.info")
+    print('HaToKi DDoS By TranDucDuy [tddcd.info] ')
+    print("https://tddcd.info")
     print(Fore.YELLOW + """
 
             ╚═════════════════════╦═════════════════════════════════════════╦══════════════════════╝
@@ -55,7 +55,7 @@ def menu():
                      ║-------------- prohibit attack government web, gov ---------------║ 
                      ╚═════════════╦══════════════════════════════════════╦═════════════╝
                          ╔═════════╩═════════╗                  ╔═════════╩═════════╗
-                         ║   hotieubao.info  ╠══════════════════╣   hotieubao.info  ║
+                         ║   tddcd.info  ╠══════════════════╣   tddcd.info  ║
                          ║    0974998164     ║ -   -   -   -  - ║     0974998164    ║
                          ║                   ╠══════════════════╣                   ║
                          ╚═══════════════════╝                  ╚═══════════════════╝
