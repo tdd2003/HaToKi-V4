@@ -15,7 +15,7 @@ bots = len(proxys)
 
 def ascii_vro():
     clear()
-    print(Fore.BLUE + """
+    print(Fore.GREEN + """
      ██░ ██  ▄▄▄     ▄▄▄█████▓ ▒█████   ██ ▄█▀ ██▓
     ▓██░ ██▒▒████▄   ▓  ██▒ ▓▒▒██▒  ██▒ ██▄█▒ ▓██▒
     ▒██▀▀██░▒██  ▀█▄ ▒ ▓██░ ▒░▒██░  ██▒▓███▄░ ▒██▒
@@ -159,3 +159,20 @@ def main():
             except IndexError:
                 pass
 main()
+def login():
+    clear()
+    user = "admin"
+    passwd = "tranducduy"
+    username = input("⚡ Username: ")
+    password = getpass.getpass(prompt='⚡ Password: ')
+    if username != user or password != passwd:
+        print("")
+        print("Không Làm Mà Đòi Có Ăn")
+        sys.exit(1)
+    elif username == user and password == passwd:
+        print("Chào Thằng Con Cặc")
+        time.sleep(3.5)
+        ascii_vro()
+        main()
+
+login()
