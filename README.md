@@ -1,7 +1,7 @@
 # HaToKi-V4
 Install HaToki V4 In Win,Unbutu,Linux
 
-git clone https://github.com/tdđ2003/HaToKi-V4/
+git clone https://github.com/tdd2003/HaToKi-V4/
 
 cd HaToki-V4
 
