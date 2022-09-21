@@ -15,7 +15,7 @@ bots = len(proxys)
 
 def ascii_vro():
     clear()
-    print(Fore.GREEN + """
+    print(Fore.BLUE + """
      ██░ ██  ▄▄▄     ▄▄▄█████▓ ▒█████   ██ ▄█▀ ██▓
     ▓██░ ██▒▒████▄   ▓  ██▒ ▓▒▒██▒  ██▒ ██▄█▒ ▓██▒
     ▒██▀▀██░▒██  ▀█▄ ▒ ▓██░ ▒░▒██░  ██▒▓███▄░ ▒██▒
@@ -38,7 +38,7 @@ def menu():
     clear()
     print('HaToKi DDoS By TranDucDuy [tddcd.info] ')
     print("https://tddcd.info")
-    print(Fore.YELLOW + """
+    print(Fore.BLUE + """
 
             ╚═════════════════════╦═════════════════════════════════════════╦══════════════════════╝
                 ╔═════════════════╩══════════════[HaToKi-DDoS]══════════════╩══════════════════╗
@@ -123,11 +123,11 @@ def main():
                 out = cnc.split()[6]
                 os.system(f'go run stress.go {ip} {port} {mode} {conn} {time} {out}')
             except IndexError:
-                print(Fore.RED +'Usage: stress <ip> <port> <mode> <connection> <seconds> <timeout>')
-                print(Fore.RED +'MODE: [1] TCP')
-                print(Fore.RED +'      [2] UDP')
-                print(Fore.RED +'      [3] HTTP')
-                print(Fore.RED +'Example: stress 1.1.1.1 80/443 3 1250 60 5')
+                print(Fore.BLUE +'Usage: stress <ip> <port> <mode> <connection> <seconds> <timeout>')
+                print(Fore.BLUE +'MODE: [1] TCP')
+                print(Fore.WHITE +'      [2] UDP')
+                print(Fore.BLUE +'      [3] HTTP')
+                print(Fore.BLUE +'Example: stress 1.1.1.1 80/443 3 1250 60 5')
 
         elif "http-rand" in cnc:
             try:
